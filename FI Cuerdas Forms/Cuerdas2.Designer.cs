@@ -39,6 +39,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCarritoGE = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnCGEFender = new System.Windows.Forms.Button();
+            this.btnCGEIbanez = new System.Windows.Forms.Button();
+            this.btnCGEGibson = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudGEFender)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGEIbanez)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGEGibson)).BeginInit();
@@ -144,11 +151,86 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btnCarritoGE
+            // 
+            this.btnCarritoGE.Location = new System.Drawing.Point(571, 412);
+            this.btnCarritoGE.Name = "btnCarritoGE";
+            this.btnCarritoGE.Size = new System.Drawing.Size(103, 23);
+            this.btnCarritoGE.TabIndex = 11;
+            this.btnCarritoGE.Text = "Agregar al Carrito";
+            this.btnCarritoGE.UseVisualStyleBackColor = true;
+            this.btnCarritoGE.Click += new System.EventHandler(this.btnCarritoGE_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(176, 268);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "4000";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(472, 320);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "4500";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(176, 438);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "3000";
+            // 
+            // btnCGEFender
+            // 
+            this.btnCGEFender.Location = new System.Drawing.Point(5, 171);
+            this.btnCGEFender.Name = "btnCGEFender";
+            this.btnCGEFender.Size = new System.Drawing.Size(110, 23);
+            this.btnCGEFender.TabIndex = 15;
+            this.btnCGEFender.Text = "Ver Características";
+            this.btnCGEFender.UseVisualStyleBackColor = true;
+            this.btnCGEFender.Click += new System.EventHandler(this.btnCGEFender_Click);
+            // 
+            // btnCGEIbanez
+            // 
+            this.btnCGEIbanez.Location = new System.Drawing.Point(572, 171);
+            this.btnCGEIbanez.Name = "btnCGEIbanez";
+            this.btnCGEIbanez.Size = new System.Drawing.Size(110, 23);
+            this.btnCGEIbanez.TabIndex = 16;
+            this.btnCGEIbanez.Text = "Ver Características";
+            this.btnCGEIbanez.UseVisualStyleBackColor = true;
+            this.btnCGEIbanez.Click += new System.EventHandler(this.btnCGEIbanez_Click);
+            // 
+            // btnCGEGibson
+            // 
+            this.btnCGEGibson.Location = new System.Drawing.Point(139, 454);
+            this.btnCGEGibson.Name = "btnCGEGibson";
+            this.btnCGEGibson.Size = new System.Drawing.Size(110, 23);
+            this.btnCGEGibson.TabIndex = 17;
+            this.btnCGEGibson.Text = "Ver Características";
+            this.btnCGEGibson.UseVisualStyleBackColor = true;
+            this.btnCGEGibson.Click += new System.EventHandler(this.btnCGEGibson_Click);
+            // 
             // Cuerdas2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(736, 749);
+            this.Controls.Add(this.btnCGEGibson);
+            this.Controls.Add(this.btnCGEIbanez);
+            this.Controls.Add(this.btnCGEFender);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnCarritoGE);
             this.Controls.Add(this.nudGEGibson);
             this.Controls.Add(this.lblGEGibson);
             this.Controls.Add(this.pictureBox3);
@@ -190,5 +272,12 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblGEGibson;
         private System.Windows.Forms.NumericUpDown nudGEGibson;
+        private System.Windows.Forms.Button btnCarritoGE;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCGEFender;
+        private System.Windows.Forms.Button btnCGEIbanez;
+        private System.Windows.Forms.Button btnCGEGibson;
     }
 }

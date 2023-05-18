@@ -32,6 +32,7 @@
             this.PanelMenúLateral = new System.Windows.Forms.Panel();
             this.btnExtras = new System.Windows.Forms.Button();
             this.panelSubMenúAire = new System.Windows.Forms.Panel();
+            this.btnComentarios = new System.Windows.Forms.Button();
             this.btnInstrumentosAire = new System.Windows.Forms.Button();
             this.panelSubMenúPercusion = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
@@ -49,12 +50,26 @@
             this.btnInstrumentosCuerdas = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelVerInstrumentos = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTotalCompra = new System.Windows.Forms.Button();
+            this.dtgCompra = new System.Windows.Forms.DataGridView();
+            this.CInstrumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CPrecioTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelComentarios = new System.Windows.Forms.Panel();
+            this.lblMostrarComentarios = new System.Windows.Forms.Label();
+            this.txtComentarios = new System.Windows.Forms.TextBox();
+            this.lblMSJ = new System.Windows.Forms.Label();
+            this.btnMostrarComentario = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCerrarForm1 = new System.Windows.Forms.Button();
             this.PanelMenúLateral.SuspendLayout();
+            this.panelSubMenúAire.SuspendLayout();
             this.panelSubMenúPercusion.SuspendLayout();
             this.panelSubMenúCuerdas.SuspendLayout();
             this.panelVerInstrumentos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCompra)).BeginInit();
+            this.panelComentarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,11 +109,24 @@
             // panelSubMenúAire
             // 
             this.panelSubMenúAire.BackColor = System.Drawing.Color.Turquoise;
+            this.panelSubMenúAire.Controls.Add(this.btnComentarios);
             this.panelSubMenúAire.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenúAire.Location = new System.Drawing.Point(0, 645);
             this.panelSubMenúAire.Name = "panelSubMenúAire";
             this.panelSubMenúAire.Size = new System.Drawing.Size(233, 182);
             this.panelSubMenúAire.TabIndex = 6;
+            // 
+            // btnComentarios
+            // 
+            this.btnComentarios.BackColor = System.Drawing.Color.Orchid;
+            this.btnComentarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnComentarios.Location = new System.Drawing.Point(0, 0);
+            this.btnComentarios.Name = "btnComentarios";
+            this.btnComentarios.Size = new System.Drawing.Size(233, 69);
+            this.btnComentarios.TabIndex = 0;
+            this.btnComentarios.Text = "Comentarios";
+            this.btnComentarios.UseVisualStyleBackColor = false;
+            this.btnComentarios.Click += new System.EventHandler(this.btnComentarios_Click);
             // 
             // btnInstrumentosAire
             // 
@@ -354,6 +382,10 @@
             // panelVerInstrumentos
             // 
             this.panelVerInstrumentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelVerInstrumentos.Controls.Add(this.btnCerrarForm1);
+            this.panelVerInstrumentos.Controls.Add(this.btnTotalCompra);
+            this.panelVerInstrumentos.Controls.Add(this.dtgCompra);
+            this.panelVerInstrumentos.Controls.Add(this.panelComentarios);
             this.panelVerInstrumentos.Controls.Add(this.pictureBox1);
             this.panelVerInstrumentos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelVerInstrumentos.Location = new System.Drawing.Point(250, 0);
@@ -361,43 +393,142 @@
             this.panelVerInstrumentos.Size = new System.Drawing.Size(736, 749);
             this.panelVerInstrumentos.TabIndex = 1;
             // 
-            // panel1
+            // btnTotalCompra
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(250, 574);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(736, 175);
-            this.panel1.TabIndex = 2;
+            this.btnTotalCompra.Location = new System.Drawing.Point(601, 404);
+            this.btnTotalCompra.Name = "btnTotalCompra";
+            this.btnTotalCompra.Size = new System.Drawing.Size(123, 23);
+            this.btnTotalCompra.TabIndex = 4;
+            this.btnTotalCompra.Text = "Total de Compra";
+            this.btnTotalCompra.UseVisualStyleBackColor = true;
+            this.btnTotalCompra.Click += new System.EventHandler(this.btnTotalCompra_Click);
+            // 
+            // dtgCompra
+            // 
+            this.dtgCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgCompra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CInstrumento,
+            this.CCantidad,
+            this.CPrecioTotal});
+            this.dtgCompra.Location = new System.Drawing.Point(200, 110);
+            this.dtgCompra.Name = "dtgCompra";
+            this.dtgCompra.Size = new System.Drawing.Size(345, 312);
+            this.dtgCompra.TabIndex = 2;
+            // 
+            // CInstrumento
+            // 
+            this.CInstrumento.HeaderText = "Instrumento";
+            this.CInstrumento.Name = "CInstrumento";
+            // 
+            // CCantidad
+            // 
+            this.CCantidad.HeaderText = "Cantidad";
+            this.CCantidad.Name = "CCantidad";
+            // 
+            // CPrecioTotal
+            // 
+            this.CPrecioTotal.HeaderText = "Precio Total";
+            this.CPrecioTotal.Name = "CPrecioTotal";
+            // 
+            // panelComentarios
+            // 
+            this.panelComentarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelComentarios.Controls.Add(this.lblMostrarComentarios);
+            this.panelComentarios.Controls.Add(this.txtComentarios);
+            this.panelComentarios.Controls.Add(this.lblMSJ);
+            this.panelComentarios.Controls.Add(this.btnMostrarComentario);
+            this.panelComentarios.Controls.Add(this.button6);
+            this.panelComentarios.Location = new System.Drawing.Point(0, 463);
+            this.panelComentarios.Name = "panelComentarios";
+            this.panelComentarios.Size = new System.Drawing.Size(733, 286);
+            this.panelComentarios.TabIndex = 3;
+            // 
+            // lblMostrarComentarios
+            // 
+            this.lblMostrarComentarios.BackColor = System.Drawing.Color.White;
+            this.lblMostrarComentarios.Location = new System.Drawing.Point(333, 39);
+            this.lblMostrarComentarios.Name = "lblMostrarComentarios";
+            this.lblMostrarComentarios.Size = new System.Drawing.Size(347, 218);
+            this.lblMostrarComentarios.TabIndex = 4;
+            // 
+            // txtComentarios
+            // 
+            this.txtComentarios.Location = new System.Drawing.Point(6, 68);
+            this.txtComentarios.Multiline = true;
+            this.txtComentarios.Name = "txtComentarios";
+            this.txtComentarios.Size = new System.Drawing.Size(321, 186);
+            this.txtComentarios.TabIndex = 3;
+            // 
+            // lblMSJ
+            // 
+            this.lblMSJ.BackColor = System.Drawing.Color.White;
+            this.lblMSJ.Location = new System.Drawing.Point(6, 34);
+            this.lblMSJ.Name = "lblMSJ";
+            this.lblMSJ.Size = new System.Drawing.Size(263, 31);
+            this.lblMSJ.TabIndex = 2;
+            // 
+            // btnMostrarComentario
+            // 
+            this.btnMostrarComentario.Location = new System.Drawing.Point(542, 10);
+            this.btnMostrarComentario.Name = "btnMostrarComentario";
+            this.btnMostrarComentario.Size = new System.Drawing.Size(152, 23);
+            this.btnMostrarComentario.TabIndex = 1;
+            this.btnMostrarComentario.Text = "Mostrar Comentario";
+            this.btnMostrarComentario.UseVisualStyleBackColor = true;
+            this.btnMostrarComentario.Click += new System.EventHandler(this.btnMostrarComentario_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(6, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(263, 30);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Agregar un Comentario sobre la Tienda";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(198, 147);
+            this.pictureBox1.Location = new System.Drawing.Point(181, 30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(399, 402);
+            this.pictureBox1.Size = new System.Drawing.Size(377, 392);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnCerrarForm1
+            // 
+            this.btnCerrarForm1.Location = new System.Drawing.Point(601, 12);
+            this.btnCerrarForm1.Name = "btnCerrarForm1";
+            this.btnCerrarForm1.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrarForm1.TabIndex = 5;
+            this.btnCerrarForm1.Text = "Cerrar";
+            this.btnCerrarForm1.UseVisualStyleBackColor = true;
+            this.btnCerrarForm1.Click += new System.EventHandler(this.btnCerrarForm1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(986, 749);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelVerInstrumentos);
             this.Controls.Add(this.PanelMenúLateral);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.PanelMenúLateral.ResumeLayout(false);
+            this.panelSubMenúAire.ResumeLayout(false);
             this.panelSubMenúPercusion.ResumeLayout(false);
             this.panelSubMenúCuerdas.ResumeLayout(false);
             this.panelVerInstrumentos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCompra)).EndInit();
+            this.panelComentarios.ResumeLayout(false);
+            this.panelComentarios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -426,7 +557,19 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelVerInstrumentos;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dtgCompra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CInstrumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CCantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CPrecioTotal;
+        private System.Windows.Forms.Button btnComentarios;
+        private System.Windows.Forms.Panel panelComentarios;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnMostrarComentario;
+        private System.Windows.Forms.Label lblMostrarComentarios;
+        private System.Windows.Forms.TextBox txtComentarios;
+        private System.Windows.Forms.Label lblMSJ;
+        private System.Windows.Forms.Button btnTotalCompra;
+        private System.Windows.Forms.Button btnCerrarForm1;
     }
 }
 

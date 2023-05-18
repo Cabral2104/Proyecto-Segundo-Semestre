@@ -33,6 +33,8 @@
             this.lblBomboAudiotek = new System.Windows.Forms.Label();
             this.lblGuitarrasElectricas = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnAddCarritoBombo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudBomboAudiotek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -82,11 +84,32 @@
             this.pictureBox3.TabIndex = 21;
             this.pictureBox3.TabStop = false;
             // 
+            // btnAddCarritoBombo
+            // 
+            this.btnAddCarritoBombo.Location = new System.Drawing.Point(496, 405);
+            this.btnAddCarritoBombo.Name = "btnAddCarritoBombo";
+            this.btnAddCarritoBombo.Size = new System.Drawing.Size(111, 23);
+            this.btnAddCarritoBombo.TabIndex = 24;
+            this.btnAddCarritoBombo.Text = "Agregar al Carrito";
+            this.btnAddCarritoBombo.UseVisualStyleBackColor = true;
+            this.btnAddCarritoBombo.Click += new System.EventHandler(this.btnAddCarritoBombo_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(329, 330);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "$1500";
+            // 
             // Percusiones5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 749);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAddCarritoBombo);
             this.Controls.Add(this.nudBomboAudiotek);
             this.Controls.Add(this.lblBomboAudiotek);
             this.Controls.Add(this.pictureBox3);
@@ -111,5 +134,7 @@
         private System.Windows.Forms.Label lblBomboAudiotek;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblGuitarrasElectricas;
+        private System.Windows.Forms.Button btnAddCarritoBombo;
+        private System.Windows.Forms.Label label1;
     }
 }

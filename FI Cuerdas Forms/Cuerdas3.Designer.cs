@@ -39,6 +39,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblBERedSub = new System.Windows.Forms.Label();
             this.nudBERedSub = new System.Windows.Forms.NumericUpDown();
+            this.btnCarritoBE = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnCBEYamaha = new System.Windows.Forms.Button();
+            this.btnCBERedSub = new System.Windows.Forms.Button();
+            this.btnCBEFender = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudBEYamaha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBEFender)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -70,7 +77,7 @@
             // 
             this.lblBEYamaha.AutoSize = true;
             this.lblBEYamaha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBEYamaha.Location = new System.Drawing.Point(83, 222);
+            this.lblBEYamaha.Location = new System.Drawing.Point(110, 202);
             this.lblBEYamaha.Name = "lblBEYamaha";
             this.lblBEYamaha.Size = new System.Drawing.Size(170, 20);
             this.lblBEYamaha.TabIndex = 5;
@@ -78,7 +85,7 @@
             // 
             // nudBEYamaha
             // 
-            this.nudBEYamaha.Location = new System.Drawing.Point(87, 245);
+            this.nudBEYamaha.Location = new System.Drawing.Point(118, 225);
             this.nudBEYamaha.Name = "nudBEYamaha";
             this.nudBEYamaha.Size = new System.Drawing.Size(156, 20);
             this.nudBEYamaha.TabIndex = 6;
@@ -121,7 +128,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto_Segundo_Semestre.Properties.Resources.bajo_yamaha;
-            this.pictureBox1.Location = new System.Drawing.Point(87, 78);
+            this.pictureBox1.Location = new System.Drawing.Point(118, 58);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(156, 141);
             this.pictureBox1.TabIndex = 4;
@@ -144,11 +151,86 @@
             this.nudBERedSub.Size = new System.Drawing.Size(156, 20);
             this.nudBERedSub.TabIndex = 12;
             // 
+            // btnCarritoBE
+            // 
+            this.btnCarritoBE.Location = new System.Drawing.Point(531, 432);
+            this.btnCarritoBE.Name = "btnCarritoBE";
+            this.btnCarritoBE.Size = new System.Drawing.Size(117, 23);
+            this.btnCarritoBE.TabIndex = 13;
+            this.btnCarritoBE.Text = "Agregar al Carrito";
+            this.btnCarritoBE.UseVisualStyleBackColor = true;
+            this.btnCarritoBE.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(173, 248);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "$5000";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(509, 366);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "$4500";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(322, 504);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "$3500";
+            // 
+            // btnCBEYamaha
+            // 
+            this.btnCBEYamaha.Location = new System.Drawing.Point(2, 140);
+            this.btnCBEYamaha.Name = "btnCBEYamaha";
+            this.btnCBEYamaha.Size = new System.Drawing.Size(110, 23);
+            this.btnCBEYamaha.TabIndex = 17;
+            this.btnCBEYamaha.Text = "Ver Caracteristicas";
+            this.btnCBEYamaha.UseVisualStyleBackColor = true;
+            this.btnCBEYamaha.Click += new System.EventHandler(this.btnCBEYamaha_Click);
+            // 
+            // btnCBERedSub
+            // 
+            this.btnCBERedSub.Location = new System.Drawing.Point(282, 520);
+            this.btnCBERedSub.Name = "btnCBERedSub";
+            this.btnCBERedSub.Size = new System.Drawing.Size(110, 23);
+            this.btnCBERedSub.TabIndex = 18;
+            this.btnCBERedSub.Text = "Ver Caracteristicas";
+            this.btnCBERedSub.UseVisualStyleBackColor = true;
+            this.btnCBERedSub.Click += new System.EventHandler(this.btnCBERedSub_Click);
+            // 
+            // btnCBEFender
+            // 
+            this.btnCBEFender.Location = new System.Drawing.Point(610, 160);
+            this.btnCBEFender.Name = "btnCBEFender";
+            this.btnCBEFender.Size = new System.Drawing.Size(110, 23);
+            this.btnCBEFender.TabIndex = 19;
+            this.btnCBEFender.Text = "Ver Caracteristicas";
+            this.btnCBEFender.UseVisualStyleBackColor = true;
+            this.btnCBEFender.Click += new System.EventHandler(this.btnCBEFender_Click);
+            // 
             // Cuerdas3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(736, 749);
+            this.Controls.Add(this.btnCBEFender);
+            this.Controls.Add(this.btnCBERedSub);
+            this.Controls.Add(this.btnCBEYamaha);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnCarritoBE);
             this.Controls.Add(this.nudBERedSub);
             this.Controls.Add(this.lblBERedSub);
             this.Controls.Add(this.pictureBox3);
@@ -190,5 +272,12 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblBERedSub;
         private System.Windows.Forms.NumericUpDown nudBERedSub;
+        private System.Windows.Forms.Button btnCarritoBE;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCBEYamaha;
+        private System.Windows.Forms.Button btnCBERedSub;
+        private System.Windows.Forms.Button btnCBEFender;
     }
 }

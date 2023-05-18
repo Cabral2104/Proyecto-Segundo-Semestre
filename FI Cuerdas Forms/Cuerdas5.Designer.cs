@@ -36,6 +36,9 @@
             this.nudSinfonie24 = new System.Windows.Forms.NumericUpDown();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAddCarritoViolonchelos = new System.Windows.Forms.Button();
+            this.btnVCVStenor = new System.Windows.Forms.Button();
+            this.btnVCVSinfonie24 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudVStentor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSinfonie24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -114,11 +117,45 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAddCarritoViolonchelos
+            // 
+            this.btnAddCarritoViolonchelos.Location = new System.Drawing.Point(68, 468);
+            this.btnAddCarritoViolonchelos.Name = "btnAddCarritoViolonchelos";
+            this.btnAddCarritoViolonchelos.Size = new System.Drawing.Size(101, 23);
+            this.btnAddCarritoViolonchelos.TabIndex = 12;
+            this.btnAddCarritoViolonchelos.Text = "Agregar al Carrito";
+            this.btnAddCarritoViolonchelos.UseVisualStyleBackColor = true;
+            this.btnAddCarritoViolonchelos.Click += new System.EventHandler(this.btnAddCarritoViolonchelos_Click);
+            // 
+            // btnVCVStenor
+            // 
+            this.btnVCVStenor.Location = new System.Drawing.Point(127, 344);
+            this.btnVCVStenor.Name = "btnVCVStenor";
+            this.btnVCVStenor.Size = new System.Drawing.Size(122, 23);
+            this.btnVCVStenor.TabIndex = 13;
+            this.btnVCVStenor.Text = "Ver Características";
+            this.btnVCVStenor.UseVisualStyleBackColor = true;
+            this.btnVCVStenor.Click += new System.EventHandler(this.btnVCVStenor_Click);
+            // 
+            // btnVCVSinfonie24
+            // 
+            this.btnVCVSinfonie24.Location = new System.Drawing.Point(446, 463);
+            this.btnVCVSinfonie24.Name = "btnVCVSinfonie24";
+            this.btnVCVSinfonie24.Size = new System.Drawing.Size(122, 23);
+            this.btnVCVSinfonie24.TabIndex = 14;
+            this.btnVCVSinfonie24.Text = "Ver Características";
+            this.btnVCVSinfonie24.UseVisualStyleBackColor = true;
+            this.btnVCVSinfonie24.Click += new System.EventHandler(this.btnVCVSinfonie24_Click);
+            // 
             // Cuerdas5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(736, 749);
+            this.Controls.Add(this.btnVCVSinfonie24);
+            this.Controls.Add(this.btnVCVStenor);
+            this.Controls.Add(this.btnAddCarritoViolonchelos);
             this.Controls.Add(this.nudSinfonie24);
             this.Controls.Add(this.lblVSinfonie24);
             this.Controls.Add(this.pictureBox2);
@@ -152,5 +189,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblVSinfonie24;
         private System.Windows.Forms.NumericUpDown nudSinfonie24;
+        private System.Windows.Forms.Button btnAddCarritoViolonchelos;
+        private System.Windows.Forms.Button btnVCVStenor;
+        private System.Windows.Forms.Button btnVCVSinfonie24;
     }
 }

@@ -36,6 +36,9 @@
             this.lblGuitarrasElectricas = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAddCarritoTriangulo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudTrianguloXO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTrianguloCharls)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -115,11 +118,42 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAddCarritoTriangulo
+            // 
+            this.btnAddCarritoTriangulo.Location = new System.Drawing.Point(487, 461);
+            this.btnAddCarritoTriangulo.Name = "btnAddCarritoTriangulo";
+            this.btnAddCarritoTriangulo.Size = new System.Drawing.Size(101, 23);
+            this.btnAddCarritoTriangulo.TabIndex = 20;
+            this.btnAddCarritoTriangulo.Text = "Agregar al Carrito";
+            this.btnAddCarritoTriangulo.UseVisualStyleBackColor = true;
+            this.btnAddCarritoTriangulo.Click += new System.EventHandler(this.btnAddCarritoTriangulo_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(176, 373);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "$500";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(500, 369);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "$400";
+            // 
             // Percusiones4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 749);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAddCarritoTriangulo);
             this.Controls.Add(this.nudTrianguloXO);
             this.Controls.Add(this.lblTrianguloXO);
             this.Controls.Add(this.pictureBox3);
@@ -152,5 +186,8 @@
         private System.Windows.Forms.Label lblTrianguloCharls;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblGuitarrasElectricas;
+        private System.Windows.Forms.Button btnAddCarritoTriangulo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

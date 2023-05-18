@@ -36,6 +36,9 @@
             this.lblTimbalMajestic32 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnAddCarritoTimbal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudTimbalAdams32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTimbalMajestic32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -113,11 +116,42 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(167, 411);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "$3000";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(475, 272);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "$4000";
+            // 
+            // btnAddCarritoTimbal
+            // 
+            this.btnAddCarritoTimbal.Location = new System.Drawing.Point(460, 489);
+            this.btnAddCarritoTimbal.Name = "btnAddCarritoTimbal";
+            this.btnAddCarritoTimbal.Size = new System.Drawing.Size(103, 23);
+            this.btnAddCarritoTimbal.TabIndex = 15;
+            this.btnAddCarritoTimbal.Text = "Agregar al Carrito";
+            this.btnAddCarritoTimbal.UseVisualStyleBackColor = true;
+            this.btnAddCarritoTimbal.Click += new System.EventHandler(this.btnAddCarritoTimbal_Click);
+            // 
             // Percusiones3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 749);
+            this.Controls.Add(this.btnAddCarritoTimbal);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.nudTimbalMajestic32);
             this.Controls.Add(this.lblTimbalMajestic32);
             this.Controls.Add(this.pictureBox3);
@@ -150,5 +184,8 @@
         private System.Windows.Forms.NumericUpDown nudTimbalMajestic32;
         private System.Windows.Forms.Label lblTimbalMajestic32;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnAddCarritoTimbal;
     }
 }

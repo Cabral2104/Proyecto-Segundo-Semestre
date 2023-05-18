@@ -36,6 +36,11 @@
             this.nudArpaSelta = new System.Windows.Forms.NumericUpDown();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAddCarritoArpa = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnCASelvi = new System.Windows.Forms.Button();
+            this.btnCASelta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudArpaSelvi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudArpaSelta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -113,11 +118,65 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAddCarritoArpa
+            // 
+            this.btnAddCarritoArpa.Location = new System.Drawing.Point(310, 473);
+            this.btnAddCarritoArpa.Name = "btnAddCarritoArpa";
+            this.btnAddCarritoArpa.Size = new System.Drawing.Size(101, 23);
+            this.btnAddCarritoArpa.TabIndex = 11;
+            this.btnAddCarritoArpa.Text = "Agregar al Carrito";
+            this.btnAddCarritoArpa.UseVisualStyleBackColor = true;
+            this.btnAddCarritoArpa.Click += new System.EventHandler(this.btnAddCarritoArpa_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(167, 408);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "$7000";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(491, 408);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "$6000";
+            // 
+            // btnCASelvi
+            // 
+            this.btnCASelvi.Location = new System.Drawing.Point(131, 424);
+            this.btnCASelvi.Name = "btnCASelvi";
+            this.btnCASelvi.Size = new System.Drawing.Size(105, 23);
+            this.btnCASelvi.TabIndex = 14;
+            this.btnCASelvi.Text = "Ver Características";
+            this.btnCASelvi.UseVisualStyleBackColor = true;
+            this.btnCASelvi.Click += new System.EventHandler(this.btnCASelvi_Click);
+            // 
+            // btnCASelta
+            // 
+            this.btnCASelta.Location = new System.Drawing.Point(450, 424);
+            this.btnCASelta.Name = "btnCASelta";
+            this.btnCASelta.Size = new System.Drawing.Size(105, 23);
+            this.btnCASelta.TabIndex = 15;
+            this.btnCASelta.Text = "Ver Características";
+            this.btnCASelta.UseVisualStyleBackColor = true;
+            this.btnCASelta.Click += new System.EventHandler(this.btnCASelta_Click);
+            // 
             // Cuerdas4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(736, 749);
+            this.Controls.Add(this.btnCASelta);
+            this.Controls.Add(this.btnCASelvi);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAddCarritoArpa);
             this.Controls.Add(this.nudArpaSelta);
             this.Controls.Add(this.lblArpaSelta);
             this.Controls.Add(this.pictureBox2);
@@ -151,5 +210,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblArpaSelta;
         private System.Windows.Forms.NumericUpDown nudArpaSelta;
+        private System.Windows.Forms.Button btnAddCarritoArpa;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCASelvi;
+        private System.Windows.Forms.Button btnCASelta;
     }
 }

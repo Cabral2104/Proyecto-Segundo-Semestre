@@ -41,6 +41,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.nudGATaylor = new System.Windows.Forms.NumericUpDown();
+            this.lblPrecioGAMartin = new System.Windows.Forms.Label();
+            this.lblGAGibson = new System.Windows.Forms.Label();
+            this.lblGATaylor = new System.Windows.Forms.Label();
+            this.btnAddCarritoGA = new System.Windows.Forms.Button();
+            this.btnVCGAMartin = new System.Windows.Forms.Button();
+            this.btnVCGAGibson = new System.Windows.Forms.Button();
+            this.btnVGATaylor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudGAMartin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGAGibson)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -145,12 +152,86 @@
             this.nudGATaylor.Size = new System.Drawing.Size(153, 20);
             this.nudGATaylor.TabIndex = 11;
             // 
+            // lblPrecioGAMartin
+            // 
+            this.lblPrecioGAMartin.AutoSize = true;
+            this.lblPrecioGAMartin.Location = new System.Drawing.Point(174, 257);
+            this.lblPrecioGAMartin.Name = "lblPrecioGAMartin";
+            this.lblPrecioGAMartin.Size = new System.Drawing.Size(37, 13);
+            this.lblPrecioGAMartin.TabIndex = 12;
+            this.lblPrecioGAMartin.Text = "$1500";
+            // 
+            // lblGAGibson
+            // 
+            this.lblGAGibson.AutoSize = true;
+            this.lblGAGibson.Location = new System.Drawing.Point(442, 257);
+            this.lblGAGibson.Name = "lblGAGibson";
+            this.lblGAGibson.Size = new System.Drawing.Size(37, 13);
+            this.lblGAGibson.TabIndex = 13;
+            this.lblGAGibson.Text = "$2000";
+            // 
+            // lblGATaylor
+            // 
+            this.lblGATaylor.AutoSize = true;
+            this.lblGATaylor.Location = new System.Drawing.Point(316, 466);
+            this.lblGATaylor.Name = "lblGATaylor";
+            this.lblGATaylor.Size = new System.Drawing.Size(37, 13);
+            this.lblGATaylor.TabIndex = 14;
+            this.lblGATaylor.Text = "$2500";
+            // 
+            // btnAddCarritoGA
+            // 
+            this.btnAddCarritoGA.Location = new System.Drawing.Point(496, 507);
+            this.btnAddCarritoGA.Name = "btnAddCarritoGA";
+            this.btnAddCarritoGA.Size = new System.Drawing.Size(127, 23);
+            this.btnAddCarritoGA.TabIndex = 15;
+            this.btnAddCarritoGA.Text = "Agregar al Carrito";
+            this.btnAddCarritoGA.UseVisualStyleBackColor = true;
+            this.btnAddCarritoGA.Click += new System.EventHandler(this.btnAddCarritoGA_Click);
+            // 
+            // btnVCGAMartin
+            // 
+            this.btnVCGAMartin.Location = new System.Drawing.Point(15, 164);
+            this.btnVCGAMartin.Name = "btnVCGAMartin";
+            this.btnVCGAMartin.Size = new System.Drawing.Size(105, 23);
+            this.btnVCGAMartin.TabIndex = 16;
+            this.btnVCGAMartin.Text = "Ver Características";
+            this.btnVCGAMartin.UseVisualStyleBackColor = true;
+            this.btnVCGAMartin.Click += new System.EventHandler(this.btnVCGAMartin_Click);
+            // 
+            // btnVCGAGibson
+            // 
+            this.btnVCGAGibson.Location = new System.Drawing.Point(540, 164);
+            this.btnVCGAGibson.Name = "btnVCGAGibson";
+            this.btnVCGAGibson.Size = new System.Drawing.Size(105, 23);
+            this.btnVCGAGibson.TabIndex = 17;
+            this.btnVCGAGibson.Text = "Ver Características";
+            this.btnVCGAGibson.UseVisualStyleBackColor = true;
+            this.btnVCGAGibson.Click += new System.EventHandler(this.btnVCGAGibson_Click);
+            // 
+            // btnVGATaylor
+            // 
+            this.btnVGATaylor.Location = new System.Drawing.Point(279, 482);
+            this.btnVGATaylor.Name = "btnVGATaylor";
+            this.btnVGATaylor.Size = new System.Drawing.Size(105, 23);
+            this.btnVGATaylor.TabIndex = 18;
+            this.btnVGATaylor.Text = "Ver Características";
+            this.btnVGATaylor.UseVisualStyleBackColor = true;
+            this.btnVGATaylor.Click += new System.EventHandler(this.btnVGATaylor_Click);
+            // 
             // Instrumentos_de_Cuerdas1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(736, 749);
+            this.Controls.Add(this.btnVGATaylor);
+            this.Controls.Add(this.btnVCGAGibson);
+            this.Controls.Add(this.btnVCGAMartin);
+            this.Controls.Add(this.btnAddCarritoGA);
+            this.Controls.Add(this.lblGATaylor);
+            this.Controls.Add(this.lblGAGibson);
+            this.Controls.Add(this.lblPrecioGAMartin);
             this.Controls.Add(this.nudGATaylor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox3);
@@ -192,5 +273,12 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown nudGATaylor;
+        private System.Windows.Forms.Label lblPrecioGAMartin;
+        private System.Windows.Forms.Label lblGAGibson;
+        private System.Windows.Forms.Label lblGATaylor;
+        private System.Windows.Forms.Button btnAddCarritoGA;
+        private System.Windows.Forms.Button btnVCGAMartin;
+        private System.Windows.Forms.Button btnVCGAGibson;
+        private System.Windows.Forms.Button btnVGATaylor;
     }
 }

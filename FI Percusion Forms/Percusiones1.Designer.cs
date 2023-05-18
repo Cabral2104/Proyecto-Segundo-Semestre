@@ -42,6 +42,11 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAddCarritoBA = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudBACrush)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBAYamaha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBAMapex)).BeginInit();
@@ -175,11 +180,62 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAddCarritoBA
+            // 
+            this.btnAddCarritoBA.Location = new System.Drawing.Point(532, 555);
+            this.btnAddCarritoBA.Name = "btnAddCarritoBA";
+            this.btnAddCarritoBA.Size = new System.Drawing.Size(107, 23);
+            this.btnAddCarritoBA.TabIndex = 16;
+            this.btnAddCarritoBA.Text = "Agregar al Carrito";
+            this.btnAddCarritoBA.UseVisualStyleBackColor = true;
+            this.btnAddCarritoBA.Click += new System.EventHandler(this.btnAddCarritoBA_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(166, 264);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "$10000";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(463, 471);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "$14000";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(166, 482);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "$12000";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(463, 264);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "$13000";
+            // 
             // Percusiones1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 749);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAddCarritoBA);
             this.Controls.Add(this.nudBATama);
             this.Controls.Add(this.lblBATama);
             this.Controls.Add(this.pictureBox4);
@@ -199,6 +255,7 @@
             this.Name = "Percusiones1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Percusiones1";
+            this.Load += new System.EventHandler(this.Percusiones1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudBACrush)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBAYamaha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBAMapex)).EndInit();
@@ -228,5 +285,10 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblBATama;
         private System.Windows.Forms.NumericUpDown nudBATama;
+        private System.Windows.Forms.Button btnAddCarritoBA;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

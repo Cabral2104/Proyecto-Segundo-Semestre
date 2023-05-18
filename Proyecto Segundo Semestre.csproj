@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllPrecios.cs" />
+    <Compile Include="Comentarios.cs" />
     <Compile Include="FI Extras Forms\Extras1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -33,7 +33,7 @@
             // 
             // btnCerrarExtras1
             // 
-            this.btnCerrarExtras1.Location = new System.Drawing.Point(13, 13);
+            this.btnCerrarExtras1.Location = new System.Drawing.Point(649, 12);
             this.btnCerrarExtras1.Name = "btnCerrarExtras1";
             this.btnCerrarExtras1.Size = new System.Drawing.Size(75, 23);
             this.btnCerrarExtras1.TabIndex = 0;
@@ -52,6 +52,7 @@
             this.Name = "Extras1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Extras1";
+            this.Load += new System.EventHandler(this.Extras1_Load);
             this.ResumeLayout(false);
 
         }
