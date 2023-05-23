@@ -267,6 +267,7 @@
             this.Name = "Aire5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Aire5";
+            this.Load += new System.EventHandler(this.Aire5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudXilófono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTrompeta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAcordeón)).EndInit();

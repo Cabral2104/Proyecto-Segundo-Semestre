@@ -61,6 +61,11 @@ namespace Proyecto_Segundo_Semestre
 
 
         }
+
+        private void Aire5_Load(object sender, EventArgs e)
+        {
+
+        }
         //The btnAddCarritoIA_Click event calculates the total price of the selected air
         //instruments and adds them to the shopping cart in the DataGridView.
     }
