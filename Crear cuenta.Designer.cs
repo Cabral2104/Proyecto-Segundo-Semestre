@@ -107,6 +107,7 @@
             this.txbConfirmarContraseñaCC.Name = "txbConfirmarContraseñaCC";
             this.txbConfirmarContraseñaCC.Size = new System.Drawing.Size(100, 20);
             this.txbConfirmarContraseñaCC.TabIndex = 13;
+            this.txbConfirmarContraseñaCC.TextChanged += new System.EventHandler(this.txbConfirmarContraseñaCC_TextChanged);
             // 
             // lblConfirmarContraseñaCC
             // 

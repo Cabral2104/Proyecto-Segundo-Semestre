@@ -56,7 +56,7 @@ namespace Proyecto_Segundo_Semestre
 
             if (VStenor > 0) { dtgvGuitarrasAcusticas.Rows.Add("V Stenor Student II", VStenor, VStenorPrecioTotal); }
             if (VSinfonie24 > 0) { dtgvGuitarrasAcusticas.Rows.Add("V Sinfonie24 Basic II", VSinfonie24, VSinfonie24PrecioTotal); }
-
+            dtgvGuitarrasAcusticas.Visible = true;
 
         }
         //This code handles the logic to add the selected cellos to the shopping cart

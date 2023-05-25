@@ -38,8 +38,9 @@ namespace Proyecto_Segundo_Semestre
                 if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(contraseña))
                 {
                     lblMensajeCC.Text = "Por favor, complete todos los campos.";
+                    return;
                 }
-                else
+                if (contraseña == confirmarcontraseña)
                 {
                     try
                     {
@@ -60,6 +61,7 @@ namespace Proyecto_Segundo_Semestre
                             txbUsuarioCC.Text = "";
                             txbCorreoCC.Text = "";
                             txbContraseñaCC.Text = "";
+                            txbConfirmarContraseñaCC.Text = "";
                         }
                     }
                     catch (Exception ex)
@@ -67,8 +69,7 @@ namespace Proyecto_Segundo_Semestre
                         lblMensajeCC.Text = "Error al registrar: " + ex.Message;
                     }
                 }
-                Form1 tienda = new Form1();
-                tienda.Show();
+               
             }
             else
             {
@@ -89,6 +90,11 @@ namespace Proyecto_Segundo_Semestre
         {
             Iniciar_Sesión iniciarsesion = new Iniciar_Sesión();
             iniciarsesion.Show();
+        }
+
+        private void txbConfirmarContraseñaCC_TextChanged(object sender, EventArgs e)
+        {
+
         }
         //This button opens the login form if the client already has a previously registered
         //account.

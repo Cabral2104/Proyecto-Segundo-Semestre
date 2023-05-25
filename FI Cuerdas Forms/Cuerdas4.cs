@@ -50,7 +50,7 @@ namespace Proyecto_Segundo_Semestre
 
             if (APSelvi > 0) { dtgvGuitarrasAcusticas.Rows.Add("AP Selvi", APSelvi, APSelviPrecioTotal); }
             if (APSelta > 0) { dtgvGuitarrasAcusticas.Rows.Add("AP Selta", APSelta, APSeltaPrecioTotal); }
-
+            dtgvGuitarrasAcusticas.Visible = true;
 
         }
         //This method is responsible for adding the selected harps to the shopping cart,

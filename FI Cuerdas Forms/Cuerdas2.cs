@@ -56,6 +56,7 @@ namespace Proyecto_Segundo_Semestre
             if (GEFender > 0) { dtgvGuitarrasAcusticas.Rows.Add("GE Fender", GEFender, GEFenderPrecioTotal); }
             if (GEIbanez > 0) { dtgvGuitarrasAcusticas.Rows.Add("GE Ibanez", GEIbanez, GEIbanezPrecioTotal); }
             if (GEGibson > 0) { dtgvGuitarrasAcusticas.Rows.Add("GE Gibson", GEGibson, GEGibsonPrecioTotal); }
+            dtgvGuitarrasAcusticas.Visible = true;
         }
         //When clicking the button "btnCarritoGE," the quantities of Fender, Ibanez, and
         //Gibson electric guitars selected by the user are obtained. The total price is

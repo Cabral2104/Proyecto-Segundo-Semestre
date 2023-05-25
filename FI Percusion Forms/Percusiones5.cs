@@ -44,8 +44,13 @@ namespace Proyecto_Segundo_Semestre
 
             if (BAudiotek > 0) { dtgvGuitarrasAcusticas.Rows.Add("Bombo Audiotek", BAudiotek, BAudiotekPrecioTotal); }
 
+            dtgvGuitarrasAcusticas.Visible = true;
 
 
+        }
+
+        private void Percusiones5_Load(object sender, EventArgs e)
+        {
 
         }
         //This event handler adds the Audiotek bass drum to the shopping cart if at least one

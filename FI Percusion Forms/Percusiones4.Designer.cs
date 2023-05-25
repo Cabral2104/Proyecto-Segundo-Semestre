@@ -95,7 +95,7 @@
             this.lblGuitarrasElectricas.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGuitarrasElectricas.Location = new System.Drawing.Point(293, 41);
             this.lblGuitarrasElectricas.Name = "lblGuitarrasElectricas";
-            this.lblGuitarrasElectricas.Size = new System.Drawing.Size(162, 35);
+            this.lblGuitarrasElectricas.Size = new System.Drawing.Size(162, 39);
             this.lblGuitarrasElectricas.TabIndex = 13;
             this.lblGuitarrasElectricas.Text = "Triangulos";
             this.lblGuitarrasElectricas.Click += new System.EventHandler(this.lblGuitarrasElectricas_Click);
@@ -150,6 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(736, 749);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -167,6 +168,7 @@
             this.Name = "Percusiones4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Percusiones4";
+            this.Load += new System.EventHandler(this.Percusiones4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudTrianguloXO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTrianguloCharls)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

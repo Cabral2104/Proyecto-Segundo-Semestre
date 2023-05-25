@@ -54,6 +54,8 @@ namespace Proyecto_Segundo_Semestre
                         if (count > 0)
                         {
                             lblMensajeIS.Text = "Inicio de sesión exitoso.";
+                            Form1 tienda = new Form1();
+                            tienda.Show();
                         }
                         else
                         {
@@ -66,8 +68,8 @@ namespace Proyecto_Segundo_Semestre
                     lblMensajeIS.Text = "Error al iniciar sesión: " + ex.Message;
                 }
             }
-            Form1 tienda = new Form1();
-            tienda.Show();
+            //Form1 tienda = new Form1();
+            //tienda.Show();
         }
         //This code verifies if the entered email and password match the records in the
         //database and displays a corresponding success or error message based on the result.

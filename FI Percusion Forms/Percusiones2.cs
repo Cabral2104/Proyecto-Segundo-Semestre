@@ -45,8 +45,13 @@ namespace Proyecto_Segundo_Semestre
 
             if (BELYamaha > 0) { dtgvGuitarrasAcusticas.Rows.Add("BEL Yamaha", BELYamaha, BELYamahaPrecioTotal); }
             if (BELRonald > 0) { dtgvGuitarrasAcusticas.Rows.Add("BEL Ronald", BELRonald, BELRonaldPrecioTotal); }
+            dtgvGuitarrasAcusticas.Visible = true;
 
 
+        }
+
+        private void Percusiones2_Load(object sender, EventArgs e)
+        {
 
         }
         //This method is responsible for adding the selected electric drums to the shopping

@@ -41,6 +41,10 @@ namespace Proyecto_Segundo_Semestre
         {
             CargarComentarios();
             btnTotalCompra.Visible = false;
+            if(dtgCompra.Visible = true)
+            {
+                btnTotalCompra.Visible = true;
+            }
         }
         //Here we instruct Form 1 that when it is opened, the btnCompraTotal button should
         //automatically become invisible, and this will change until the Carrito button is
@@ -312,6 +316,5 @@ namespace Proyecto_Segundo_Semestre
         {
             this.Close();
         }
-        
     }
 }

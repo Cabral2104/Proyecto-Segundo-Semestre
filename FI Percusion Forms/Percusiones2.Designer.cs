@@ -148,6 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(736, 749);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -165,6 +166,7 @@
             this.Name = "Percusiones2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Percusiones2";
+            this.Load += new System.EventHandler(this.Percusiones2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudBEYamaha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBERonald)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

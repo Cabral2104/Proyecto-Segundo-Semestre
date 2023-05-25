@@ -107,6 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(736, 749);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAddCarritoBombo);
@@ -120,6 +121,7 @@
             this.Name = "Percusiones5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Percusiones5";
+            this.Load += new System.EventHandler(this.Percusiones5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudBomboAudiotek)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);

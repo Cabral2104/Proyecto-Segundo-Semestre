@@ -68,6 +68,9 @@ namespace Proyecto_Segundo_Semestre
             /*
             
             this.Controls.Add(dtgvGuitarrasAcusticas);*/
+            dtgvGuitarrasAcusticas.Visible = true;
+
+            
         }
         //This method is used to add rows to the DataGridView control dtgvGuitarrasAcusticas
         //with information about the acoustic guitars selected by the user and their calculated

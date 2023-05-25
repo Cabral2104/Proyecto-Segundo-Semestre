@@ -47,8 +47,13 @@ namespace Proyecto_Segundo_Semestre
 
             if (TAdams32 > 0) { dtgvGuitarrasAcusticas.Rows.Add("Timbal Adams32", TAdams32, TAdams32PrecioTotal); }
             if (TMajestic32 > 0) { dtgvGuitarrasAcusticas.Rows.Add("Timbal Majestic32", TMajestic32, TMajestic32PrecioTotal); }
+            dtgvGuitarrasAcusticas.Visible = true;
 
 
+        }
+
+        private void Percusiones3_Load(object sender, EventArgs e)
+        {
 
         }
         //This event is responsible for adding the selected timpani to the shopping cart,

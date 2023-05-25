@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.PanelMenúLateral = new System.Windows.Forms.Panel();
-            this.btnExtras = new System.Windows.Forms.Button();
-            this.panelSubMenúAire = new System.Windows.Forms.Panel();
-            this.btnComentarios = new System.Windows.Forms.Button();
             this.btnInstrumentosAire = new System.Windows.Forms.Button();
             this.panelSubMenúPercusion = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
@@ -50,6 +47,7 @@
             this.btnInstrumentosCuerdas = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelVerInstrumentos = new System.Windows.Forms.Panel();
+            this.btnCerrarForm1 = new System.Windows.Forms.Button();
             this.btnTotalCompra = new System.Windows.Forms.Button();
             this.dtgCompra = new System.Windows.Forms.DataGridView();
             this.CInstrumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,22 +60,22 @@
             this.btnMostrarComentario = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCerrarForm1 = new System.Windows.Forms.Button();
+            this.btnComentarios = new System.Windows.Forms.Button();
+            this.panelSubMenúAire = new System.Windows.Forms.Panel();
             this.PanelMenúLateral.SuspendLayout();
-            this.panelSubMenúAire.SuspendLayout();
             this.panelSubMenúPercusion.SuspendLayout();
             this.panelSubMenúCuerdas.SuspendLayout();
             this.panelVerInstrumentos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCompra)).BeginInit();
             this.panelComentarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelSubMenúAire.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelMenúLateral
             // 
             this.PanelMenúLateral.AutoScroll = true;
             this.PanelMenúLateral.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.PanelMenúLateral.Controls.Add(this.btnExtras);
             this.PanelMenúLateral.Controls.Add(this.panelSubMenúAire);
             this.PanelMenúLateral.Controls.Add(this.btnInstrumentosAire);
             this.PanelMenúLateral.Controls.Add(this.panelSubMenúPercusion);
@@ -90,43 +88,6 @@
             this.PanelMenúLateral.Name = "PanelMenúLateral";
             this.PanelMenúLateral.Size = new System.Drawing.Size(250, 749);
             this.PanelMenúLateral.TabIndex = 0;
-            // 
-            // btnExtras
-            // 
-            this.btnExtras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExtras.FlatAppearance.BorderSize = 0;
-            this.btnExtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExtras.Location = new System.Drawing.Point(0, 827);
-            this.btnExtras.Name = "btnExtras";
-            this.btnExtras.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnExtras.Size = new System.Drawing.Size(233, 45);
-            this.btnExtras.TabIndex = 7;
-            this.btnExtras.Text = "Carrito";
-            this.btnExtras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExtras.UseVisualStyleBackColor = true;
-            this.btnExtras.Click += new System.EventHandler(this.btnExtras_Click);
-            // 
-            // panelSubMenúAire
-            // 
-            this.panelSubMenúAire.BackColor = System.Drawing.Color.Turquoise;
-            this.panelSubMenúAire.Controls.Add(this.btnComentarios);
-            this.panelSubMenúAire.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenúAire.Location = new System.Drawing.Point(0, 645);
-            this.panelSubMenúAire.Name = "panelSubMenúAire";
-            this.panelSubMenúAire.Size = new System.Drawing.Size(233, 182);
-            this.panelSubMenúAire.TabIndex = 6;
-            // 
-            // btnComentarios
-            // 
-            this.btnComentarios.BackColor = System.Drawing.Color.Orchid;
-            this.btnComentarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnComentarios.Location = new System.Drawing.Point(0, 0);
-            this.btnComentarios.Name = "btnComentarios";
-            this.btnComentarios.Size = new System.Drawing.Size(233, 69);
-            this.btnComentarios.TabIndex = 0;
-            this.btnComentarios.Text = "Comentarios";
-            this.btnComentarios.UseVisualStyleBackColor = false;
-            this.btnComentarios.Click += new System.EventHandler(this.btnComentarios_Click);
             // 
             // btnInstrumentosAire
             // 
@@ -393,6 +354,16 @@
             this.panelVerInstrumentos.Size = new System.Drawing.Size(736, 749);
             this.panelVerInstrumentos.TabIndex = 1;
             // 
+            // btnCerrarForm1
+            // 
+            this.btnCerrarForm1.Location = new System.Drawing.Point(601, 12);
+            this.btnCerrarForm1.Name = "btnCerrarForm1";
+            this.btnCerrarForm1.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrarForm1.TabIndex = 5;
+            this.btnCerrarForm1.Text = "Cerrar";
+            this.btnCerrarForm1.UseVisualStyleBackColor = true;
+            this.btnCerrarForm1.Click += new System.EventHandler(this.btnCerrarForm1_Click);
+            // 
             // btnTotalCompra
             // 
             this.btnTotalCompra.Location = new System.Drawing.Point(601, 404);
@@ -440,7 +411,7 @@
             this.panelComentarios.Controls.Add(this.button6);
             this.panelComentarios.Location = new System.Drawing.Point(0, 463);
             this.panelComentarios.Name = "panelComentarios";
-            this.panelComentarios.Size = new System.Drawing.Size(733, 286);
+            this.panelComentarios.Size = new System.Drawing.Size(733, 283);
             this.panelComentarios.TabIndex = 3;
             // 
             // lblMostrarComentarios
@@ -497,15 +468,27 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnCerrarForm1
+            // btnComentarios
             // 
-            this.btnCerrarForm1.Location = new System.Drawing.Point(601, 12);
-            this.btnCerrarForm1.Name = "btnCerrarForm1";
-            this.btnCerrarForm1.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrarForm1.TabIndex = 5;
-            this.btnCerrarForm1.Text = "Cerrar";
-            this.btnCerrarForm1.UseVisualStyleBackColor = true;
-            this.btnCerrarForm1.Click += new System.EventHandler(this.btnCerrarForm1_Click);
+            this.btnComentarios.BackColor = System.Drawing.Color.Orchid;
+            this.btnComentarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnComentarios.Location = new System.Drawing.Point(0, 0);
+            this.btnComentarios.Name = "btnComentarios";
+            this.btnComentarios.Size = new System.Drawing.Size(233, 69);
+            this.btnComentarios.TabIndex = 0;
+            this.btnComentarios.Text = "Comentarios";
+            this.btnComentarios.UseVisualStyleBackColor = false;
+            this.btnComentarios.Click += new System.EventHandler(this.btnComentarios_Click);
+            // 
+            // panelSubMenúAire
+            // 
+            this.panelSubMenúAire.BackColor = System.Drawing.Color.Turquoise;
+            this.panelSubMenúAire.Controls.Add(this.btnComentarios);
+            this.panelSubMenúAire.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenúAire.Location = new System.Drawing.Point(0, 645);
+            this.panelSubMenúAire.Name = "panelSubMenúAire";
+            this.panelSubMenúAire.Size = new System.Drawing.Size(233, 182);
+            this.panelSubMenúAire.TabIndex = 6;
             // 
             // Form1
             // 
@@ -522,7 +505,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.PanelMenúLateral.ResumeLayout(false);
-            this.panelSubMenúAire.ResumeLayout(false);
             this.panelSubMenúPercusion.ResumeLayout(false);
             this.panelSubMenúCuerdas.ResumeLayout(false);
             this.panelVerInstrumentos.ResumeLayout(false);
@@ -530,6 +512,7 @@
             this.panelComentarios.ResumeLayout(false);
             this.panelComentarios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelSubMenúAire.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -537,8 +520,6 @@
         #endregion
 
         private System.Windows.Forms.Panel PanelMenúLateral;
-        private System.Windows.Forms.Button btnExtras;
-        private System.Windows.Forms.Panel panelSubMenúAire;
         private System.Windows.Forms.Button btnInstrumentosAire;
         private System.Windows.Forms.Panel panelSubMenúPercusion;
         private System.Windows.Forms.Button button7;
@@ -561,7 +542,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CInstrumento;
         private System.Windows.Forms.DataGridViewTextBoxColumn CCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn CPrecioTotal;
-        private System.Windows.Forms.Button btnComentarios;
         private System.Windows.Forms.Panel panelComentarios;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnMostrarComentario;
@@ -570,6 +550,8 @@
         private System.Windows.Forms.Label lblMSJ;
         private System.Windows.Forms.Button btnTotalCompra;
         private System.Windows.Forms.Button btnCerrarForm1;
+        private System.Windows.Forms.Panel panelSubMenúAire;
+        private System.Windows.Forms.Button btnComentarios;
     }
 }
 

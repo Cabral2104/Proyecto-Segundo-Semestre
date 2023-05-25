@@ -54,6 +54,7 @@ namespace Proyecto_Segundo_Semestre
             if (BEYamaha > 0) { dtgvGuitarrasAcusticas.Rows.Add("BE Yamaha", BEYamaha, BEYamahaPrecioTotal); }
             if (BEFender > 0) { dtgvGuitarrasAcusticas.Rows.Add("BE Fender", BEFender, BEFenderPrecioTotal); }
             if (BERedSub > 0) { dtgvGuitarrasAcusticas.Rows.Add("BE Red Sub", BERedSub, BERedSubPrecioTotal); }
+            dtgvGuitarrasAcusticas.Visible = true;
         }
         //This method is responsible for retrieving the quantities from the NumericUpDown
         //controls corresponding to certain instruments, calculating the total prices using

@@ -57,8 +57,13 @@ namespace Proyecto_Segundo_Semestre
 
             if (TACharls > 0) { dtgvGuitarrasAcusticas.Rows.Add("Triángulo Charls", TACharls, TACharlsPrecioTotal); }
             if (TAXO > 0) { dtgvGuitarrasAcusticas.Rows.Add("Triángulo XO", TAXO, TAXOPrecioTotal); }
+            dtgvGuitarrasAcusticas.Visible = true;
 
 
+        }
+
+        private void Percusiones4_Load(object sender, EventArgs e)
+        {
 
         }
         //The method adds the selected triangles to the shopping cart, displaying them in the

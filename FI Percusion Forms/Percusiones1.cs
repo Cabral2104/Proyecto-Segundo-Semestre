@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Proyecto_Segundo_Semestre.FI_Percusion_Forms
 {
     public partial class Percusiones1 : Form
-    {
+    { 
         DataGridView dtgvGuitarrasAcusticas;
         //The purpose of this instance is to display and manipulate tabular data in the form
         //of a table within the form.
@@ -56,7 +56,7 @@ namespace Proyecto_Segundo_Semestre.FI_Percusion_Forms
             if (BAYamaha > 0) { dtgvGuitarrasAcusticas.Rows.Add("BA Yamaha", BAYamaha, BAYamahaPrecioTotal); }
             if (BAMapex > 0) { dtgvGuitarrasAcusticas.Rows.Add("BA Mapex", BAMapex, BAMapexPrecioTotal); }
             if (BATama > 0) { dtgvGuitarrasAcusticas.Rows.Add("BA Tama", BATama, BATamaPrecioTotal); }
-
+            dtgvGuitarrasAcusticas.Visible = true;
 
         }
         //This method adds the selected Acoustic Drums to the shopping cart, displaying the

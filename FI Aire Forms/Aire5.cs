@@ -57,7 +57,7 @@ namespace Proyecto_Segundo_Semestre
             if (AXilófono > 0) { dtgvGuitarrasAcusticas.Rows.Add("Xilófono", AXilófono, AXilófonoPrecioTotal); }
             if (AAcordeón > 0) { dtgvGuitarrasAcusticas.Rows.Add("Acordeón", AAcordeón, AAcordeónPrecioTotal); }
             if (AFlauta > 0) { dtgvGuitarrasAcusticas.Rows.Add("Flauta", AFlauta, AFlautaPrecioTotal); }
-
+            dtgvGuitarrasAcusticas.Visible = true;
 
 
         }
